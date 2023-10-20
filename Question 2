@@ -1,0 +1,110 @@
+public class Weather {
+    private double temperature;
+    private String conditions;
+    private double wind;
+
+    // Constructor with parameters
+    public Weather(double temperature, String conditions, double wind) {
+        this.temperature = temperature;
+        this.conditions = conditions;
+        this.wind = wind;
+    }
+
+    // Constructor without parameters
+    public Weather() {
+        this.temperature = 0.0;
+        this.conditions = "Unknown";
+        this.wind = 0.0;
+    }
+
+    // Getter and Setter for temperature
+    public double getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(double temperature) {
+        this.temperature = temperature;
+    }
+
+    // Getter and Setter for conditions
+    public String getConditions() {
+        return conditions;
+    }
+
+    public void setConditions(String conditions) {
+        this.conditions = conditions;
+    }
+
+    // Getter and Setter for wind
+    public double getWind() {
+        return wind;
+    }
+
+    public void setWind(double wind) {
+        this.wind = wind;
+    }
+}
+
+public class Location {
+    private double latitude;
+    private double longitude;
+    private String locationId;
+
+    // Constructor with parameters
+    public Location(double latitude, double longitude, String locationId) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.locationId = locationId;
+    }
+
+    // Constructor without parameters
+    public Location() {
+        this.latitude = 0.0;
+        this.longitude = 0.0;
+        this.locationId = null;
+    }
+
+    // Getter and Setter for latitude
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    // Getter and Setter for longitude
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    // Getter and Setter for locationId
+    public String getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(String locationId) {
+        this.locationId = locationId;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating instances of Weather and Location classes
+        Weather weatherData = new Weather(25.0, "Sunny", 10.0);
+        Location locationInfo = new Location(37.7749, -122.4194, "San Francisco");
+
+        // Accessing and modifying attributes using getter and setter methods
+        System.out.println("Temperature: " + weatherData.getTemperature());
+        weatherData.setTemperature(30.0);
+        System.out.println("Updated Temperature: " + weatherData.getTemperature());
+
+        System.out.println("Location ID: " + locationInfo.getLocationId());
+        locationInfo.setLocationId("SF001");
+        System.out.println("Updated Location ID: " + locationInfo.getLocationId());
+    }
+}
