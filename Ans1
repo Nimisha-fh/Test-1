@@ -1,0 +1,74 @@
+class Location {
+    public double latitude;
+    public double longitude;
+    public int locationNumber;
+    public String locationId;
+
+    // Constructor with parameters
+    public Location(double latitude, double longitude, int locationNumber, String locationId) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.locationNumber = locationNumber;
+        this.locationId = locationId;
+    }
+
+    // Constructor without parameters
+    public Location() {
+        // Default constructor
+    }
+
+    // Getters and setters for latitude
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+
+    }
+
+    // Getters and setters for longitude
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    // Getters and setters for location number
+    public int getLocationNumber() {
+        return locationNumber;
+    }
+
+    public void setLocationNumber(int locationNumber) {
+        this.locationNumber = locationNumber;
+    }
+
+    // Getters and setters for location ID
+    public String getLocationId() {
+        return locationId;
+    }
+
+    public void setLocationId(String locationId) {
+        this.locationId = locationId;
+    }
+}
+public static void main(string args[])
+ { 
+
+location  l = new location();
+l.location(20.89,30.93,20,"up");
+l.location();
+System.out.println(l.getlatitude());
+System.out.println(l.getLatitude());
+System.out.println(l.getLocationNumber());
+System.out.println(l.getLocationId());
+}
+
+
+
+
+
+
+}
